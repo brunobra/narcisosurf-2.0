@@ -1,20 +1,47 @@
 header {
     width: 100%;
-    height: 80px;
     background: $color-prim;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 #logo {
-	height: 100%;
-	@extend %floated;
+	height: 80px;
+	
 }
 
-.section1,
+.section1  {
+	margin: 10px;
+	& h1 {
+		display: none;
+	}
+}
+
 .section2 {
-	@extend %floated;
+	width: 100%;
+	/*margin: 10px;*/
+	& h1 {
+		display: none;
+	}
 }
 
 menu {
-	@extend %floated;
+	& ul {
+	    width: 100%;
+	    display: table;
+	    table-layout: fixed;
+	}
+	& ul li {
+	    display: table-cell;
+	}
+	& ul li a {
+	    display: block;
+	    padding: 10px 0 10px 0;
+	    font-weight: bold;
+    	&:hover {
+			background: black;
+			color: $yellow;
+		}
+	}
 }
+
+

@@ -1,0 +1,18 @@
+footer {
+	text-align: center;
+	padding: 8px 0 10px 0;
+	background: $yellow;
+	& .social {
+		margin: 10px 0 10px 0;	
+		& li {
+			display: inline;
+			 margin: 20px;
+		}
+	}
+	& .phone {
+		margin: 40px;
+		& li {
+			margin: 20px;
+		}
+	}
+}

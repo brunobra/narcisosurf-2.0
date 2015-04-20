@@ -1,15 +1,22 @@
+body {
+	counter-reset: counter;
+}
+
+
 a {
 	&:link {
 		text-decoration: none;
+		color: black;
 	}
 	&:visited {
-		color: lightblue;
-	}
-	&:hover {
-		color: green;
+		color: black;
 	}
 }
 
 ul li {
 	list-style: none;
+}
+
+.scrolloff {
+    pointer-events: none;
 }
