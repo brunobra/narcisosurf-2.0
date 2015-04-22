@@ -2,36 +2,89 @@ header {
     width: 100%;
     background: $color-prim;
     text-align: center;
+
+	@media #{$brk-u-wide} {
+		height: 80px;
+	}
+
+    @extend %clearfix;
 }
 
 #logo {
 	height: 80px;
+
+	@media #{$brk-narrow} {
+		float: left;
+	}
 	
 }
 
 .section1  {
 	margin: 10px;
+
+	@media #{$brk-narrow} {
+		float: left;
+		margin-top: 0;
+		margin-left: 50px;
+		padding-top: 10px;
+	}
+
 	& h1 {
 		display: none;
+		font-size: 30px;
+
+		@media #{$brk-narrow} {
+			display: block;
+		}
 	}
 }
 
 .section2 {
-	width: 100%;
-	/*margin: 10px;*/
+
+	@media #{$brk-narrow} {
+		margin-top: 0;
+		padding-top: 10px;
+		margin-left: 50px;
+	}
+
+	@media #{$brk-u-wide} {
+		float: left;
+	}
+
 	& h1 {
 		display: none;
+		font-size: 30px;
+
+		@media #{$brk-narrow} {
+			display: block;
+		}
+
 	}
 }
 
 menu {
+
+	@media #{$brk-u-wide} {
+		float: right;
+		width: 400px;
+		height: 100%;
+	}
+
 	& ul {
 	    width: 100%;
 	    display: table;
 	    table-layout: fixed;
+
+    	@media #{$brk-u-wide} {
+			height: 100%;
+		}
 	}
 	& ul li {
 	    display: table-cell;
+
+	    @media #{$brk-u-wide} {
+			height: 100%;
+		}
 	}
 	& ul li a {
 	    display: block;
@@ -41,7 +94,14 @@ menu {
 			background: black;
 			color: $yellow;
 		}
+
+		@media #{$brk-u-wide} {
+			padding-top: 30px;
+			height: 100%;
+		}
 	}
+
+	@extend %clearfix;
 }
 
 

@@ -5,3 +5,9 @@ $yellow3		:	#DAA520;
 
 // Functional Colors
 $color-prim		:	$yellow;
+
+// Media Queries BreakPoints
+
+$brk-narrow		:	(min-width: 764px);
+$brk-wide		:	(min-width: 1024px);
+$brk-u-wide		:	(min-width: 1200px);
