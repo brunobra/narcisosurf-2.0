@@ -1,0 +1,7 @@
+
+@mixin linear_gradient($value...) {
+  background-image: -webkit-linear-gradient($value); /* For Safari 5.1 to 6.0 */
+  background-image: -o-linear-gradient($value); /* For Opera 11.1 to 12.0 */
+  background-image: -moz-linear-gradient($value); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient($value); /* Standard syntax */
+}

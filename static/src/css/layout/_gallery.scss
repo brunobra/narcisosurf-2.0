@@ -1,4 +1,32 @@
-.main-gallery img {
-	width: 100%;
-	max-height: 550px;
+.main-gallery {
+
+	& .slide {
+		width: 100%;
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		& h1 {
+			position: absolute;
+			top: 50px;
+		}
+
+		& img {
+			width: 100%;
+			max-height: 550px;
+		}
+	}
+
+	& .slide1 {
+		background-image: url("../img/sup2.jpeg");
+	}
+
+	& .slide2 {
+		background-image: url("../img/surf2.jpeg");
+	}
+
+	& .slide3 {
+		background-image: url("../img/enseada.jpg");
+	}
 }

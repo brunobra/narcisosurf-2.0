@@ -1,31 +1,40 @@
 .why {
-	margin: 50px 0 50px 0;
+	margin: 50px auto 50px auto;
 	text-align: center;
 	& h1 {
 		margin-bottom: 20px;
 	}
+
+
+
 	& .container {
 		width: 100%;
-		@extend %clearfix;
 		& div {
 			width: 150px;
 			margin: 20px 10px 20px 10px;
 			display: inline-block;
 			text-align: center;
+
+			@media #{$brk-narrow} {
+					width: 200px;
+			}
+
 			p {
 				margin: 0;
 			}
+
 			&:before {
 				content: counter(counter)" ";
 				counter-increment: counter;
+				background-color: $yellow;
+				color: black;
 				font-weight: bold;
-				background-color: grey;
-				color: white;
+				font-size: 18px;
 				border-radius: 20px;
 				display: table-cell;
 				width: 40px;
 				height: 40px;
-				padding-top: 12px;
+				padding-top: 10px;
 				box-sizing: border-box;
 				float: left;
 			}
