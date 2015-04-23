@@ -1,5 +1,16 @@
 .main-gallery {
 
+	margin-top: 180px;
+
+	@media #{$brk-narrow} {
+		margin-top: 118px;
+	}
+
+	@media #{$brk-u-wide} {
+		margin-top: 80px;
+	}
+
+
 	& .slide {
 		width: 100%;
 		height: 400px;
@@ -29,4 +40,8 @@
 	& .slide3 {
 		background-image: url("../img/enseada.jpg");
 	}
+}
+
+.remove-margin {
+	margin-top: 40px;
 }

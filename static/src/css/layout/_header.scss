@@ -2,6 +2,9 @@ header {
     width: 100%;
     background: $color-prim;
     text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
 	@media #{$brk-u-wide} {
 		height: 80px;
@@ -102,6 +105,53 @@ menu {
 	}
 
 	@extend %clearfix;
+}
+
+.fix-header {
+
+	@media #{$brk-wide} {
+		height: 40px;
+	}	
+
+	#logo {
+		height: 40px;
+		float: left;
+	}
+
+	& .section1 {
+		display: none;
+		@media #{$brk-u-wide} {
+			display: block;
+
+			& h1 {
+				display: none;
+			}
+		}
+	}
+
+	& .section2 {
+		display: none;
+		@media #{$brk-u-wide} {
+			display: block;
+
+			& h1 {
+				display: none;
+			}
+		}
+	}
+
+	menu {
+		width: 90%;
+		float: right;
+
+		@media #{$brk-u-wide} {
+			width: 40%;
+		}
+
+		& ul li a {
+			padding-top: 12px;
+		}
+	}
 }
 
 

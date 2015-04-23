@@ -1,4 +1,19 @@
 /********************
+		HEADER
+*********************/
+
+$(window).scroll(function() {
+	if ($(document).scrollTop() > 0 ) {
+		$('header').addClass("fix-header");
+		$('.main-gallery').addClass("remove-margin");
+	} else {
+		$('header').removeClass("fix-header");
+		$('.main-gallery').removeClass("remove-margin");
+	}
+});
+
+
+/********************
 		MAPS
 *********************/
 
@@ -13,3 +28,4 @@ $('.place').on('click', function () {
 $("#map").mouseleave(function () {
     $('#map').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
 });
+
