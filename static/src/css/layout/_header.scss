@@ -14,18 +14,24 @@ header {
 }
 
 #logo {
-	height: 80px;
-
+	margin-left: 40px;
+	height: 40px;
+	width: 55px;
+	background-image: url("../img/logo-transparente-40.png");
+	float: left;
 	@media #{$brk-narrow} {
-		float: left;
+		height: 80px;
+		width: 110px;
+		background-image: url("../img/logo-transparente-80.png");
 	}
 	
 }
 
 .section1  {
-	margin: 10px;
+	margin: 0 10px;
 
 	@media #{$brk-narrow} {
+		display: block;
 		float: left;
 		margin-top: 0;
 		margin-left: 50px;
@@ -33,16 +39,21 @@ header {
 	}
 
 	& h1 {
-		display: none;
-		font-size: 30px;
+		margin-top: 0;
+		font-size: 25px;
 
 		@media #{$brk-narrow} {
 			display: block;
 		}
 	}
+
+	& h3 {
+		font-size: 15px;
+	}
 }
 
 .section2 {
+	margin: 10px 0;
 
 	@media #{$brk-narrow} {
 		margin-top: 0;
@@ -62,6 +73,10 @@ header {
 			display: block;
 		}
 
+	}
+
+	& h3 {
+		font-size: 15px;
 	}
 }
 
@@ -106,52 +121,3 @@ menu {
 
 	@extend %clearfix;
 }
-
-.fix-header {
-
-	@media #{$brk-wide} {
-		height: 40px;
-	}	
-
-	#logo {
-		height: 40px;
-		float: left;
-	}
-
-	& .section1 {
-		display: none;
-		@media #{$brk-u-wide} {
-			display: block;
-
-			& h1 {
-				display: none;
-			}
-		}
-	}
-
-	& .section2 {
-		display: none;
-		@media #{$brk-u-wide} {
-			display: block;
-
-			& h1 {
-				display: none;
-			}
-		}
-	}
-
-	menu {
-		width: 90%;
-		float: right;
-
-		@media #{$brk-u-wide} {
-			width: 40%;
-		}
-
-		& ul li a {
-			padding-top: 12px;
-		}
-	}
-}
-
-

@@ -4,11 +4,11 @@
 
 $(window).scroll(function() {
 	if ($(document).scrollTop() > 0 ) {
-		$('header').addClass("fix-header");
-		$('.main-gallery').addClass("remove-margin");
+		$('header').addClass("scroll-header");
+		$('.carrousel').addClass("remove-margin");
 	} else {
-		$('header').removeClass("fix-header");
-		$('.main-gallery').removeClass("remove-margin");
+		$('header').removeClass("scroll-header");
+		$('.carrousel').removeClass("remove-margin");
 	}
 });
 
