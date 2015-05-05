@@ -1,13 +1,13 @@
 .carrousel {
 
-	margin-top: 77px;
+	/*margin-top: 77px;*/
 
 	@media #{$brk-narrow} {
-		margin-top: 118px;
+		margin-top: 62px;
 	}
 
 	@media #{$brk-u-wide} {
-		margin-top: 80px;
+		/*margin-top: 80px;*/
 	}
 
 
@@ -60,5 +60,5 @@
 }
 
 .remove-margin {
-	margin-top: 40px;
+	margin-top: 20px;
 }

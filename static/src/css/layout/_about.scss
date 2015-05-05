@@ -5,12 +5,13 @@
 	@extend %clearfix;
 
 	@media #{$brk-wide} {
-		margin: 50px 100px 50px 100px;
+		margin: 50px;
 	}
 
 	& h1 {
 		font-size: 30px;
 		margin-bottom: 20px;
+		text-align: left;
 	}
 
 	& img {

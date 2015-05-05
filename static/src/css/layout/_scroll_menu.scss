@@ -1,0 +1,21 @@
+.scroll-menu {
+	@media #{$brk-narrow} {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 40px;
+	}
+
+	@media #{$brk-wide} {
+		.section2-desktop {
+			height: 40px;
+			& h1 {
+				display: none;
+			}
+		}
+	}
+
+	menu ul li a{
+		padding-top: 10px;
+	}
+}

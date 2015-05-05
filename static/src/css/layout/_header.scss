@@ -4,17 +4,26 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
+
+	@media #{$brk-narrow} {
+		float: left;
+		width: 55%;
+	}
+
+	@media #{$brk-wide} {
+		width: 35%;
+	}
 
 	@media #{$brk-u-wide} {
 		height: 80px;
 	}
 
-    @extend %clearfix;
+    /*@extend %clearfix;*/
 }
 
 #logo {
-	margin-left: 40px;
+	margin-left: 20px;
 	height: 40px;
 	width: 55px;
 	background-image: url("../img/logo-transparente-40.png");
@@ -27,15 +36,37 @@ header {
 	
 }
 
+.menu-anchor {
+	width: 40px;
+	height: 32px;
+	margin: 6px 6px; 
+	right: 0;
+	display: block;
+	position: absolute;
+	transition: all .25s linear;
+
+	@media #{$brk-narrow} {
+		display: none;
+	}
+}
+
+.menu-anchor:before {
+	content: "";
+	display: block;
+	margin: 7px auto;
+	width: 70%;
+	height: 0.25em;
+	background: black;
+	box-shadow: 0 .45em 0 0 black, 0 .9em 0 0 black;
+}
+
 .section1  {
-	margin: 0 10px;
+	margin: 0 20px;
+	float: left;
 
 	@media #{$brk-narrow} {
 		display: block;
-		float: left;
-		margin-top: 0;
-		margin-left: 50px;
-		padding-top: 10px;
+		margin: 15px;
 	}
 
 	& h1 {
@@ -50,74 +81,4 @@ header {
 	& h3 {
 		font-size: 15px;
 	}
-}
-
-.section2 {
-	margin: 10px 0;
-
-	@media #{$brk-narrow} {
-		margin-top: 0;
-		padding-top: 10px;
-		margin-left: 50px;
-	}
-
-	@media #{$brk-u-wide} {
-		float: left;
-	}
-
-	& h1 {
-		display: none;
-		font-size: 30px;
-
-		@media #{$brk-narrow} {
-			display: block;
-		}
-
-	}
-
-	& h3 {
-		font-size: 15px;
-	}
-}
-
-menu {
-
-	@media #{$brk-u-wide} {
-		float: right;
-		width: 400px;
-		height: 100%;
-	}
-
-	& ul {
-	    width: 100%;
-	    display: table;
-	    table-layout: fixed;
-
-    	@media #{$brk-u-wide} {
-			height: 100%;
-		}
-	}
-	& ul li {
-	    display: table-cell;
-
-	    @media #{$brk-u-wide} {
-			height: 100%;
-		}
-	}
-	& ul li a {
-	    display: block;
-	    padding: 10px 0 10px 0;
-	    font-weight: bold;
-    	&:hover {
-			background: black;
-			color: $yellow;
-		}
-
-		@media #{$brk-u-wide} {
-			padding-top: 30px;
-			height: 100%;
-		}
-	}
-
-	@extend %clearfix;
 }

@@ -5,13 +5,28 @@
 $(window).scroll(function() {
 	if ($(document).scrollTop() > 0 ) {
 		$('header').addClass("scroll-header");
+		$('.menu').addClass("scroll-menu");
 		$('.carrousel').addClass("remove-margin");
 	} else {
 		$('header').removeClass("scroll-header");
+		$('.menu').removeClass("scroll-menu");
 		$('.carrousel').removeClass("remove-margin");
 	}
 });
 
+/********************
+		MENU
+*********************/
+
+$('.menu-anchor').on('click touchstart', function(e){
+	$('html, body').animate({scrollTop: 0}, 500);
+	$('html').toggleClass('menu-active');
+  	e.preventDefault();
+});
+
+$('.menu menu ul li a').on('click touchstart', function(e){
+	$('html').removeClass('menu-active');
+});
 
 /********************
 		MAPS

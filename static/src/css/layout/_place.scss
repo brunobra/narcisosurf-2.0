@@ -1,11 +1,7 @@
 .place {
 	text-align: center;
 
-	margin: 50px auto 50px auto;
-
-	@media #{$brk-wide} {
-		/*margin: 0 100px 50px 100px;*/
-	}
+	margin: 50px;
 
 	@extend %clearfix;
 
@@ -21,12 +17,24 @@
 		}
 	}
 
-	p {
-		display: none;
+	.place-desc {
 
+		h1 {
+			text-align: left;
+		}
+		
 		@media #{$brk-wide} {
-			display: block;
-			margin-top: 50px;
+			width: 45%;
+			float: left;
+		}
+
+		p {
+			display: none;
+
+			@media #{$brk-wide} {
+				display: block;
+				margin-top: 50px;
+			}
 		}
 	}
 }

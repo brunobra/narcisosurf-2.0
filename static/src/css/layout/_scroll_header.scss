@@ -1,48 +1,21 @@
 .scroll-header {
 
-	#logo {
-	margin-left: 0;
+	float: left;
 	height: 40px;
-	width: 55px;
-	background-image: url("../img/logo-transparente-40.png");
-	}
 
-	@media #{$brk-wide} {
-		height: 40px;
-	}	
+	@media #{$brk-narrow} {
+		#logo {
+			height: 40px;
+			width: 55px;
+			background-image: url("../img/logo-transparente-40.png");
+		}	
 
-	& .section1 {
-		display: none;
-		@media #{$brk-u-wide} {
-			display: block;
+		.section1 {
+			margin: 10px;
 
 			& h1 {
 				display: none;
 			}
-		}
-	}
-
-	& .section2 {
-		display: none;
-		@media #{$brk-u-wide} {
-			display: block;
-
-			& h1 {
-				display: none;
-			}
-		}
-	}
-
-	menu {
-		width: 84%;
-		float: right;
-
-		@media #{$brk-u-wide} {
-			width: 40%;
-		}
-
-		& ul li a {
-			padding-top: 12px;
 		}
 	}
 }
