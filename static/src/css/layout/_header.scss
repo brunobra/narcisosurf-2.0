@@ -18,12 +18,10 @@ header {
 	@media #{$brk-u-wide} {
 		height: 80px;
 	}
-
-    /*@extend %clearfix;*/
 }
 
 #logo {
-	margin-left: 20px;
+	margin-left: 10px;
 	height: 40px;
 	width: 55px;
 	background-image: url("../img/logo-transparente-40.png");
@@ -32,6 +30,10 @@ header {
 		height: 80px;
 		width: 110px;
 		background-image: url("../img/logo-transparente-80.png");
+	}
+
+	@media #{$brk-u-wide} {
+		margin-left: 10%;
 	}
 	
 }
@@ -61,12 +63,12 @@ header {
 }
 
 .section1  {
-	margin: 0 20px;
+	margin: 0 5%;
 	float: left;
 
 	@media #{$brk-narrow} {
 		display: block;
-		margin: 15px;
+		margin: 10px 20px;
 	}
 
 	& h1 {
@@ -80,5 +82,14 @@ header {
 
 	& h3 {
 		font-size: 15px;
+	}
+
+	& h6 {
+		display: none;
+
+		@media #{$brk-narrow} {
+			display: block;
+			margin: 0;
+		}
 	}
 }

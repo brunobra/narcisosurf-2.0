@@ -1,6 +1,6 @@
 .about {
 	text-align: center;
-	margin: 50px auto 50px auto;
+	margin: 50px auto;
 
 	@extend %clearfix;
 
@@ -11,7 +11,9 @@
 	& h1 {
 		font-size: 30px;
 		margin-bottom: 20px;
-		text-align: left;
+		@media #{$brk-wide} {
+			text-align: left;
+		}
 	}
 
 	& img {
@@ -23,8 +25,8 @@
 		@media #{$brk-wide} {
 			content: url("../img/perfil2.jpg");
 			width: 45%;
+			border-radius: 0;
 			height: auto;
-			border-radius: 10px;
 			float: left;
 		}
 	}

@@ -1,7 +1,8 @@
 .why {
-	margin: 50px auto 50px auto;
+	margin: 50px auto;
 	text-align: center;
 	& h1 {
+		font-size: 30px;
 		margin-bottom: 20px;
 	}
 
@@ -10,14 +11,10 @@
 	& .container {
 		width: 100%;
 		& div {
-			width: 150px;
-			margin: 20px 10px 20px 10px;
+			width: 200px;
+			margin: 20px 10px;
 			display: inline-block;
 			text-align: center;
-
-			@media #{$brk-narrow} {
-					width: 200px;
-			}
 
 			p {
 				margin: 0;

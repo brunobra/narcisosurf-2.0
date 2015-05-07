@@ -1,9 +1,20 @@
 .place {
 	text-align: center;
-
-	margin: 50px;
+	margin: 50px auto;
 
 	@extend %clearfix;
+
+	@media #{$brk-wide} {
+		margin: 50px;
+	}
+
+	& h1 {
+		font-size: 30px;
+		margin-bottom: 20px;
+		@media #{$brk-wide} {
+			text-align: left;
+		}
+	}
 
 	& iframe {
 		width: 100%;
@@ -11,7 +22,8 @@
 		margin-top: 20px;
 
 		@media #{$brk-wide} {
-			width: 40%;
+			width: 45%;
+			height: 350px;
 			float: right;
 			margin-left: 50px;
 		}
@@ -19,8 +31,10 @@
 
 	.place-desc {
 
-		h1 {
-			text-align: left;
+		@media #{$brk-wide} {
+			& h1 {
+				text-align: left;
+			}
 		}
 		
 		@media #{$brk-wide} {
@@ -28,13 +42,13 @@
 			float: left;
 		}
 
-		p {
+		& p:last-child {
 			display: none;
-
+			margin-top: 16px;
 			@media #{$brk-wide} {
 				display: block;
-				margin-top: 50px;
 			}
 		}
+
 	}
 }

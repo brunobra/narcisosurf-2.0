@@ -74,6 +74,11 @@
 	}
 
 	.section2-mobile {
+
+		& ul li {
+			margin: 50px 0;
+		}
+
 		@media #{$brk-narrow} {
 			display: none;
 		}
@@ -84,7 +89,7 @@
 		background: $color-prim;
 		position: absolute;
 		bottom: 0;
-		height: 50px;
+		height: 100px;
 		z-index: 2;
 
 		@media #{$brk-narrow} {
@@ -113,7 +118,7 @@
 		& ul li a {
 		    display: block;
 		    height: 100%;
-		    padding-top: 15px;
+		    padding-top: 40px;
 		    font-weight: bold;
 	    	&:hover {
 				background: black;

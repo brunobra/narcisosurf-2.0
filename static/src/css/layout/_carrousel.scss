@@ -1,13 +1,7 @@
 .carrousel {
 
-	/*margin-top: 77px;*/
-
 	@media #{$brk-narrow} {
 		margin-top: 62px;
-	}
-
-	@media #{$brk-u-wide} {
-		/*margin-top: 80px;*/
 	}
 
 
@@ -28,9 +22,22 @@
 
 		& h1 {
 			position: absolute;
-			top: 50px;
-			left: 20%;
-			color: white;
+			top: 10%;
+			left: 10%;
+			color: $color-prim;
+			text-shadow: 2px 0 0 #000,
+			    -2px 0 0 #000,
+			     0 2px 0 #000, 
+			    0 -2px 0 #000, 
+			     1px 1px #000, 
+			 -1px -1px 0 #000, 
+			  1px -1px 0 #000, 
+			  -1px 1px 0 #000;
+			/*text-shadow: 5px 5px 5px #888888;*/
+
+			@media #{$brk-narrow} {
+				font-size: 30px;
+			}
 		}
 
 		& p {

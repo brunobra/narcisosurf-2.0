@@ -1,9 +1,7 @@
 .scroll-header {
-
-	float: left;
-	height: 40px;
-
 	@media #{$brk-narrow} {
+			float: left;
+			height: 40px;
 		#logo {
 			height: 40px;
 			width: 55px;
@@ -11,7 +9,7 @@
 		}	
 
 		.section1 {
-			margin: 10px;
+			margin: 5px 10px;
 
 			& h1 {
 				display: none;
