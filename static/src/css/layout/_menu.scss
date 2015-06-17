@@ -5,13 +5,16 @@
 
 		&:before {
 			background: $color-prim;
-			box-shadow: 0 .45em 0 0 $color-prim, 0 .9em 0 0 $color-prim;
+			@include box-shadow(0 .45em 0 0 $color-prim, 0 .9em 0 0 $color-prim);
+			/*box-shadow: 0 .45em 0 0 $color-prim, 0 .9em 0 0 $color-prim;*/
 		}
 	}
 
 	.menu {
-		transform: translateX(0);
-		transition: all .25s linear;
+		@include transform-x(0);
+		@include transition(all .25s linear);
+		/*transform: translateX(0);
+		transition: all .25s linear;*/
 	}
 }
 
@@ -19,23 +22,27 @@
 .menu {
 
 	padding-top: 50px;
-	box-sizing: border-box;
+	@include box-sizing;
+	/*box-sizing: border-box;*/
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	background: white;
 	z-index: 2;
 	
-
-	transform: translateX(-100%);
-	transition: all .25s linear;
+	@include transform-x(-100%);
+	@include transition(all .25s linear);
+	/*transform: translateX(-100%);
+	transition: all .25s linear;*/
 	overflow: hidden;
 
 	@extend %clearfix;
 
 	@media #{$brk-narrow} {
-		transform: none;
-		transition: none;
+		@include transform(none);
+		@include transition(none);
+/*		transform: none;
+		transition: none;*/
 		position: static;
 		width: 45%;
 		height: 80px;

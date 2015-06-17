@@ -45,7 +45,8 @@ header {
 	right: 0;
 	display: block;
 	position: absolute;
-	transition: all .25s linear;
+	@include transition(all .25s linear);
+	/*transition: all .25s linear;*/
 
 	@media #{$brk-narrow} {
 		display: none;
@@ -59,7 +60,8 @@ header {
 	width: 70%;
 	height: 0.25em;
 	background: black;
-	box-shadow: 0 .45em 0 0 black, 0 .9em 0 0 black;
+	@include box-shadow(0 .45em 0 0 black, 0 .9em 0 0 black);
+	/*box-shadow: 0 .45em 0 0 black, 0 .9em 0 0 black;*/
 }
 
 .section1  {
