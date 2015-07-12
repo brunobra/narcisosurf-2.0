@@ -1,19 +1,82 @@
 .scroll-header {
-	@media #{$brk-narrow} {
-			float: left;
-			height: 40px;
-		#logo {
-			height: 40px;
-			width: 55px;
-			background-image: url("../img/logo-transparente-40.png");
-		}	
 
-		.section1 {
-			margin: 5px 10px;
+	height: 45px;
+
+	.logo {
+		margin: 2px 0 2px 7.5%;
+		height: 40px;
+		width: 55px;
+		background-image: url("../img/logo-transparente-40.png");
+		float: left;
+
+		@media #{$brk-narrow} {
+			margin: 2px 0 2px 2.5%;
+		}
+	}
+
+	.section1 {
+		margin: 0;
+		display: none;
+
+		@media #{$brk-narrow} {
+			display: block;
 
 			& h1 {
 				display: none;
 			}
+
+			& h3, h6 {
+				margin: 5px 0 5px 10px;
+			}
 		}
+	}
+
+	.section2 {
+		margin: 0;
+		display: none;
+
+		@media #{$brk-wide} {
+			float: left;
+			display: block;
+			margin:  5px 1%;
+
+			& h1 {
+				display: none;
+			}
+
+			& h3 {
+				margin: 5px 0 5px 10px;
+				float: left;
+			}
+		}
+
+		@media #{$brk-u-wide} {
+			margin-left: 7%;
+		}
+	}
+
+	menu {
+		width: 70%;
+		height: 100%;
+		float: right;
+
+		@media #{$brk-narrow} {
+			width: 40%;
+		}
+
+		@media #{$brk-wide} {
+			float: right;
+			width: 30%
+		}
+
+		@media #{$brk-u-wide} {
+			float: right;
+			width: 35%;
+
+			& ul li a {
+				padding-top: 15px;
+			}
+		}
+
 	}
 }

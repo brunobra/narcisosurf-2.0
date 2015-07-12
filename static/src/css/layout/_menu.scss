@@ -1,143 +1,73 @@
-.menu-active {
-	overflow: hidden;
-	& .menu-anchor {
-		background: black;
+.section2 {
+/*	display: none;
+	background: $color-prim;
+	padding-top: 10px;
 
-		&:before {
-			background: $color-prim;
-			@include box-shadow(0 .45em 0 0 $color-prim, 0 .9em 0 0 $color-prim);
-			/*box-shadow: 0 .45em 0 0 $color-prim, 0 .9em 0 0 $color-prim;*/
+	@media #{$brk-wide} {
+		display: block;
+		height: 80px;
+		width: 50%;
+		float: left;
+	}
+
+	& h1, h3 {
+		font-size: 30px;
+
+		@media #{$brk-narrow} {
+			display: block;
 		}
+
 	}
 
-	.menu {
-		@include transform-x(0);
-		@include transition(all .25s linear);
-		/*transform: translateX(0);
-		transition: all .25s linear;*/
-	}
+	& h3 {
+		font-size: 15px;
+	}*/
 }
 
 
-.menu {
-
-	padding-top: 50px;
-	@include box-sizing;
-	/*box-sizing: border-box;*/
-	width: 100%;
-	height: 100%;
+menu {
+/*	background: $color-prim;
 	position: absolute;
-	background: white;
+	bottom: 0;
+	height: 100px;
 	z-index: 2;
-	
-	@include transform-x(-100%);
-	@include transition(all .25s linear);
-	/*transform: translateX(-100%);
-	transition: all .25s linear;*/
-	overflow: hidden;
-
-	@extend %clearfix;
 
 	@media #{$brk-narrow} {
-		@include transform(none);
-		@include transition(none);
-/*		transform: none;
-		transition: none;*/
 		position: static;
-		width: 45%;
-		height: 80px;
+		bottom: none;
 		float: right;
-		padding-top: 0;
+		height: 100%;
 	}
 
 	@media #{$brk-wide} {
-		width: 65%;
+		width: 50%;
 	}
 
-	.section2-desktop {
-		display: none;
-		background: $color-prim;
-		padding-top: 10px;
-
-		@media #{$brk-wide} {
-			display: block;
-			height: 80px;
-			width: 50%;
-			float: left;
-		}
-
-		& h1, h3 {
-			font-size: 30px;
-
-			@media #{$brk-narrow} {
-				display: block;
-			}
-
-		}
-
-		& h3 {
-			font-size: 15px;
-		}
+	& ul {
+	    width: 100%;
+	    height: 100%;
+	    display: table;
+	    table-layout: fixed;
 	}
 
-	.section2-mobile {
+	& ul li {
+	    display: table-cell;
+	    height: 100%;
+	}
 
-		& ul li {
-			margin: 50px 0;
+	& ul li a {
+	    display: block;
+	    height: 100%;
+	    padding-top: 40px;
+	    font-weight: bold;
+    	&:hover {
+			background: black;
+			color: $color-prim;
 		}
 
 		@media #{$brk-narrow} {
-			display: none;
-		}
-	}
-
-	menu {
-
-		background: $color-prim;
-		position: absolute;
-		bottom: 0;
-		height: 100px;
-		z-index: 2;
-
-		@media #{$brk-narrow} {
-			position: static;
-			bottom: none;
-			float: right;
+			padding-top: 30px;
 			height: 100%;
 		}
-
-		@media #{$brk-wide} {
-			width: 50%;
-		}
-
-		& ul {
-		    width: 100%;
-		    height: 100%;
-		    display: table;
-		    table-layout: fixed;
-		}
-
-		& ul li {
-		    display: table-cell;
-		    height: 100%;
-		}
-
-		& ul li a {
-		    display: block;
-		    height: 100%;
-		    padding-top: 40px;
-		    font-weight: bold;
-	    	&:hover {
-				background: black;
-				color: $color-prim;
-			}
-
-			@media #{$brk-narrow} {
-				padding-top: 30px;
-				height: 100%;
-			}
-		}
-
-		@extend %clearfix;
-	}
+	}*/
 }
