@@ -1475,7 +1475,7 @@ menu {
         height: 450px; } }
     @media (min-width: 1200px) {
       .carrousel .slide {
-        height: 550px; } }
+        height: 600px; } }
     .carrousel .slide h1 {
       position: absolute;
       top: 10%;
@@ -1494,11 +1494,29 @@ menu {
       width: 100%;
       max-height: 550px; }
   .carrousel .slide1 {
-    background-image: url("../img/sup2.jpeg"); }
+    background-image: url("../img/carrousel/narciso_sup_small.jpg"); }
+    @media (min-width: 500px) {
+      .carrousel .slide1 {
+        background-image: url("../img/carrousel/narciso_sup_medium.jpg"); }
+        @media (min-width: 1024px) {
+          .carrousel .slide1 {
+            background-image: url("../img/carrousel/narciso_sup_large.jpg"); } } }
   .carrousel .slide2 {
-    background-image: url("../img/surf2.jpeg"); }
+    background-image: url("../img/carrousel/narciso_surf_small.jpg"); }
+    @media (min-width: 500px) {
+      .carrousel .slide2 {
+        background-image: url("../img/carrousel/narciso_surf_medium.jpg"); }
+        @media (min-width: 1024px) {
+          .carrousel .slide2 {
+            background-image: url("../img/carrousel/narciso_surf_large.jpg"); } } }
   .carrousel .slide3 {
-    background-image: url("../img/enseada.jpg"); }
+    background-image: url("../img/carrousel/praia_enseada_small.jpg"); }
+    @media (min-width: 500px) {
+      .carrousel .slide3 {
+        background-image: url("../img/carrousel/praia_enseada_medium.jpg"); }
+        @media (min-width: 1024px) {
+          .carrousel .slide3 {
+            background-image: url("../img/carrousel/praia_enseada_large.jpg"); } } }
 
 .remove-margin {
   margin-top: 20px; }
@@ -1572,6 +1590,9 @@ menu {
       float: right; } }
   .about .desc p {
     margin: 0; }
+    @media (min-width: 1024px) {
+      .about .desc p {
+        margin-top: 50px; } }
   .about .desc p:last-child {
     display: none;
     margin-top: 16px; }
@@ -1603,7 +1624,9 @@ menu {
         margin-left: 50px; } }
   @media (min-width: 1024px) {
     .place .place-desc h1 {
-      text-align: left; } }
+      text-align: left; }
+    .place .place-desc p {
+      margin-top: 50px; } }
   @media (min-width: 1024px) {
     .place .place-desc {
       width: 45%;

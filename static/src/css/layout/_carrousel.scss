@@ -21,7 +21,7 @@
 		}
 
 		@media #{$brk-u-wide} {
-			height: 550px;
+			height: 600px;
 		}
 
 		& h1 {
@@ -57,15 +57,39 @@
 	}
 
 	& .slide1 {
-		background-image: url("../img/sup2.jpeg");
+		background-image: url("../img/carrousel/narciso_sup_small.jpg");
+
+		@media #{$brk-small} {
+			background-image: url("../img/carrousel/narciso_sup_medium.jpg");
+
+			@media #{$brk-wide} {
+				background-image: url("../img/carrousel/narciso_sup_large.jpg");
+			}
+		}
 	}
 
 	& .slide2 {
-		background-image: url("../img/surf2.jpeg");
+		background-image: url("../img/carrousel/narciso_surf_small.jpg");
+
+		@media #{$brk-small} {
+			background-image: url("../img/carrousel/narciso_surf_medium.jpg");
+
+			@media #{$brk-wide} {
+				background-image: url("../img/carrousel/narciso_surf_large.jpg");
+			}
+		}
 	}
 
 	& .slide3 {
-		background-image: url("../img/enseada.jpg");
+		background-image: url("../img/carrousel/praia_enseada_small.jpg");
+
+		@media #{$brk-small} {
+			background-image: url("../img/carrousel/praia_enseada_medium.jpg");
+
+			@media #{$brk-wide} {
+				background-image: url("../img/carrousel/praia_enseada_large.jpg");
+			}
+		}
 	}
 }
 

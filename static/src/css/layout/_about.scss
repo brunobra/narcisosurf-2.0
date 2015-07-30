@@ -39,6 +39,10 @@
 
 		& p {
 			margin: 0;
+
+			@media #{$brk-wide} {
+				margin-top: 50px;
+			}
 		}
 
 		& p:last-child {

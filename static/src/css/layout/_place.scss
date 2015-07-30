@@ -35,6 +35,10 @@
 			& h1 {
 				text-align: left;
 			}
+
+			& p {
+				margin-top: 50px;
+			}
 		}
 		
 		@media #{$brk-wide} {
