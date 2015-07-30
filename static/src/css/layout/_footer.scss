@@ -5,6 +5,11 @@ footer {
 
 	@extend %clearfix;
 
+	h1 {
+		margin: 10px auto;
+		text-decoration: underline;
+	}
+
 	& .social {
 		margin: 10px 0 10px 0;	
 
@@ -26,7 +31,6 @@ footer {
 		@extend %clearfix;
 
 		@media #{$brk-wide} {
-			margin-top: 30px;
 			margin-bottom: 0;
 		}
 

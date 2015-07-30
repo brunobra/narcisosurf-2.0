@@ -1,0 +1,17 @@
+.social-share {
+	h1 {
+		margin: 30px auto;
+	}
+	.links {
+		li {
+			margin: 10px 5%;
+			display: inline; 
+			a img {
+
+				@media (max-width: 764px) {
+					width: 50px;
+				}
+			}
+		}
+	}
+}

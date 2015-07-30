@@ -79,3 +79,29 @@ var openPhotoSwipe = function() {
 $('#gallery').on('click', function() {
 	openPhotoSwipe();
 })
+
+
+/********************
+ SOCIAL SHARE LINKS
+*********************/
+
+$('.fb-link').on('click', function(e) {
+  e.preventDefault();
+  window.open('http://www.facebook.com/sharer/sharer.php?u=' + window.location.href, 
+              'facebook_share', 
+              'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+});
+
+$('.tw-link').on('click', function(e) {
+  e.preventDefault();
+  window.open('http://twitter.com/share?url=' + window.location.href, 
+              'twitter_share', 
+              'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+});
+
+$('.gp-link').on('click', function(e) {
+  e.preventDefault();
+  window.open('https://plus.google.com/share?url=' + window.location.href, 
+              'twitter_share', 
+              'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+});
