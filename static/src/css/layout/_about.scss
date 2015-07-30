@@ -36,16 +36,13 @@
 			float: right;
 		}
 
-		& p {
-			margin: 0;
-
+		& p:first-child {
 			@media #{$brk-wide} {
 				margin-top: 50px;
 			}
 		}
 
 		& p:last-child {
-			/*display: none;*/
 			margin-top: 16px;
 			@media #{$brk-wide} {
 				display: block;
