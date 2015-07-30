@@ -46,7 +46,7 @@
 		}
 
 		& p:last-child {
-			display: none;
+			/*display: none;*/
 			margin-top: 16px;
 			@media #{$brk-wide} {
 				display: block;
