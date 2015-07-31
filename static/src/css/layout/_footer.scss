@@ -7,14 +7,13 @@ footer {
 
 	h1 {
 		margin: 10px auto;
-		text-decoration: underline;
 	}
 
 	& .social {
-		margin: 10px 0 10px 0;	
 
 		@media #{$brk-wide} {
 			float: right;
+			margin-top: -15px;
 			margin-right: 200px;
 		}
 
@@ -26,7 +25,7 @@ footer {
 	}
 
 	& .phone {
-		margin: 40px 0 40px 0;		
+		margin: 15px 0;
 
 		@extend %clearfix;
 
