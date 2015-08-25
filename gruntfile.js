@@ -6,8 +6,7 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 files: {
-                    'static/js/script-min.js': ['static/src/js/*.js'],
-                    'static/lib/lib-min.js':['static/src/lib/*.js']
+                    'static/js/script-min.js': ['static/src/js/*.js']
                 }
             },
             dev: {
