@@ -48,6 +48,71 @@
 				display: block;
 			}
 		}
+
+		@extend %clearfix;
+	}
+
+	& .certifications {
+		width: 100%;
+		height: 140px;
+/*		border: 10px ;
+		border-style: ridge;
+		border-radius: 5px;*/
+		float: left;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+
+		& ul {
+			& li {
+				display: inline-block;
+				width: 180px;
+				height: 112px;
+				margin: 5px 5px;
+				border: 5px ridge #b47b4b;
+				box-shadow: 5px 5px 3px #888888;
+				background: white;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			& .cref {
+				background-image: url("../img/certifications/cref_small.jpg");
+			}
+
+			& .isa {
+				background-image: url("../img/certifications/isa_small.jpg");
+			}
+
+			& .belas_artes {
+				background-image: url("../img/certifications/belas_artes_small.jpg");
+			}
+
+			& .ecosurf {
+				background-image: url("../img/certifications/ecosurfi_small.jpg");
+			}
+
+			& .ibrasurf_1 {
+				background-image: url("../img/certifications/ibrasurf_1_small.jpg");
+			}
+
+			& .ibrasurf_2 {
+				background-image: url("../img/certifications/ibrasurf_2_small.jpg");
+			}
+
+			& .salva_surf {
+				background-image: url("../img/certifications/salva_surf_small.jpg");
+			}
+
+			& .campeonato {
+				background-image: url("../img/certifications/campeonato_small.jpg");
+			}
+
+			& .zecao {
+				background-image: url("../img/certifications/zecao_small.jpg");
+			}
+		}
 	}
 
 }
