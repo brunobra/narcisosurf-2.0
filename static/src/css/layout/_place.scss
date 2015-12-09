@@ -1,12 +1,9 @@
 .place {
+	width: 90%;
 	text-align: center;
-	margin: 50px auto;
+	margin: 200px auto 50px;
 
 	@extend %clearfix;
-
-	@media screen and ( min-width: $brk-wide) {
-		margin: 50px;
-	}
 
 	& h1 {
 		margin-bottom: 20px;
