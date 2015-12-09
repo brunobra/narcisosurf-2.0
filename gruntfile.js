@@ -6,7 +6,8 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 files: {
-                    'static/js/script-min.js': ['static/src/js/*.js']
+                    'static/js/script-min.js': ['static/src/js/*.js'],
+                    'static/lib/lib-min.js':['static/src/lib/*.js']
                 }
             },
             dev: {
@@ -25,7 +26,7 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 options: {
-                    outputStyle: 'expanded'
+                    style: 'expanded'
                 },
                 files: {
                     'static/css/style.css': 'static/src/css/main.scss'
@@ -55,7 +56,7 @@ module.exports = function(grunt) {
     // Load the plugin
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     // Register task(s)
     grunt.registerTask('default', ['uglify:dev', 'sass:dev']);

@@ -7,7 +7,7 @@
 		font-size: 30px;
 	}
 
-	@media #{$brk-narrow} {
+	@media screen and ( min-width: $brk-narrow) {
 		width: 95%;
 	}
 

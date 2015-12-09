@@ -1,12 +1,12 @@
 .scroll-menu {
-	@media #{$brk-narrow} {
+	@media screen and ( min-width: $brk-narrow) {
 		position: fixed;
 		top: 0;
 		right: 0;
 		height: 40px;
 	}
 
-	@media #{$brk-wide} {
+	@media screen and ( min-width: $brk-wide) {
 		.section2-desktop {
 			height: 40px;
 			& h1 {

@@ -9,7 +9,7 @@
 		background-image: url("../img/logo-transparente-40.png");
 		float: left;
 
-		@media #{$brk-narrow} {
+		@media screen and ( min-width: $brk-narrow) {
 			margin: 2px 0 2px 2.5%;
 		}
 	}
@@ -18,7 +18,7 @@
 		margin: 0;
 		display: none;
 
-		@media #{$brk-narrow} {
+		@media screen and ( min-width: $brk-narrow) {
 			display: block;
 
 			& h1 {
@@ -35,7 +35,7 @@
 		margin: 0;
 		display: none;
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			float: left;
 			display: block;
 			margin:  5px 1%;
@@ -50,7 +50,7 @@
 			}
 		}
 
-		@media #{$brk-u-wide} {
+		@media screen and ( min-width: $brk-u-wide) {
 			margin-left: 7%;
 		}
 	}
@@ -60,16 +60,16 @@
 		height: 100%;
 		float: right;
 
-		@media #{$brk-narrow} {
+		@media screen and ( min-width: $brk-narrow) {
 			width: 40%;
 		}
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			float: right;
 			width: 30%
 		}
 
-		@media #{$brk-u-wide} {
+		@media screen and ( min-width: $brk-u-wide) {
 			float: right;
 			width: 35%;
 

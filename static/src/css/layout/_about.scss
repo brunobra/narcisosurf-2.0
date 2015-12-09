@@ -4,13 +4,13 @@
 
 	@extend %clearfix;
 
-	@media #{$brk-wide} {
+	@media screen and ( min-width: $brk-wide) {
 		margin: 50px;
 	}
 
 	& h1 {
 		margin-bottom: 20px;
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			text-align: left;
 		}
 	}
@@ -21,7 +21,7 @@
 		border-radius: 150px;
 		text-align: center;
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			content: url("../img/perfil2.jpg");
 			width: 45%;
 			border-radius: 0;
@@ -31,20 +31,20 @@
 	}
 
 	& .desc {
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			width: 45%;
 			float: right;
 		}
 
 		& p:first-child {
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				margin-top: 50px;
 			}
 		}
 
 		& p:last-child {
 			margin-top: 16px;
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				display: block;
 			}
 		}

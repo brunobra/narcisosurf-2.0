@@ -4,13 +4,13 @@
 
 	@extend %clearfix;
 
-	@media #{$brk-wide} {
+	@media screen and ( min-width: $brk-wide) {
 		margin: 50px;
 	}
 
 	& h1 {
 		margin-bottom: 20px;
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			text-align: left;
 		}
 	}
@@ -20,7 +20,7 @@
 		height: 250px;
 		margin-top: 20px;
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			width: 45%;
 			height: 350px;
 			float: right;
@@ -30,7 +30,7 @@
 
 	.place-desc {
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			& h1 {
 				text-align: left;
 			}
@@ -40,7 +40,7 @@
 			}
 		}
 		
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			width: 45%;
 			float: left;
 		}
@@ -48,7 +48,7 @@
 		& p:last-child {
 			display: none;
 			margin-top: 16px;
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				display: block;
 			}
 		}

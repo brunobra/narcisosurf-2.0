@@ -11,7 +11,7 @@ footer {
 
 	& .social {
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			float: right;
 			margin-top: -15px;
 			margin-right: 200px;
@@ -29,13 +29,13 @@ footer {
 
 		@extend %clearfix;
 
-		@media #{$brk-wide} {
+		@media screen and ( min-width: $brk-wide) {
 			margin-bottom: 0;
 		}
 
 		& li {
 			margin: 20px;
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				display: inline;
 			}
 		}

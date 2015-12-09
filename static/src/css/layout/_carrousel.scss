@@ -1,11 +1,11 @@
 .carrousel {
 	margin-top: 140px;
 
-	@media #{$brk-narrow} {
+	@media screen and ( min-width: $brk-narrow) {
 		margin-top: 130px;
 	}
 
-	@media #{$brk-u-wide} {
+	@media screen and ( min-width: $brk-u-wide) {
 		margin-top: 90px;
 	}
 
@@ -16,11 +16,11 @@
 		background-position: center;
 		background-repeat: no-repeat;
 
-		@media #{$brk-narrow} {
+		@media screen and ( min-width: $brk-narrow) {
 			height: 450px;
 		}
 
-		@media #{$brk-u-wide} {
+		@media screen and ( min-width: $brk-u-wide) {
 			height: 600px;
 		}
 
@@ -38,7 +38,7 @@
 			  1px -1px 0 #000, 
 			  -1px 1px 0 #000;
 
-			@media #{$brk-narrow} {
+			@media screen and ( min-width: $brk-narrow) {
 				font-size: 30px;
 			}
 		}
@@ -59,10 +59,10 @@
 	& .slide1 {
 		background-image: url("../img/carrousel/narciso_sup_small.jpg");
 
-		@media #{$brk-small} {
+		@media screen and ( min-width: $brk-small) {
 			background-image: url("../img/carrousel/narciso_sup_medium.jpg");
 
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				background-image: url("../img/carrousel/narciso_sup_large.jpg");
 			}
 		}
@@ -71,10 +71,10 @@
 	& .slide2 {
 		background-image: url("../img/carrousel/narciso_surf_small.jpg");
 
-		@media #{$brk-small} {
+		@media screen and ( min-width: $brk-small) {
 			background-image: url("../img/carrousel/narciso_surf_medium.jpg");
 
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				background-image: url("../img/carrousel/narciso_surf_large.jpg");
 			}
 		}
@@ -83,10 +83,10 @@
 	& .slide3 {
 		background-image: url("../img/carrousel/praia_enseada_small.jpg");
 
-		@media #{$brk-small} {
+		@media screen and ( min-width: $brk-small) {
 			background-image: url("../img/carrousel/praia_enseada_medium.jpg");
 
-			@media #{$brk-wide} {
+			@media screen and ( min-width: $brk-wide) {
 				background-image: url("../img/carrousel/praia_enseada_large.jpg");
 			}
 		}
