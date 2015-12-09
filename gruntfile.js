@@ -1,3 +1,7 @@
+var libs = [
+    'static/src/lib/jquery/dist/jquery.min.js'
+]
+
 module.exports = function(grunt) {
 
     // Configure task(s)
@@ -7,7 +11,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'static/js/script-min.js': ['static/src/js/*.js'],
-                    'static/lib/lib-min.js':['static/src/lib/*.js']
+                    'static/lib/lib-min.js':[libs]
                 }
             },
             dev: {
@@ -19,7 +23,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'static/js/script-min.js': ['static/src/js/*.js'],
-                    'static/lib/lib-min.js':['static/src/lib/*.js']
+                    'static/lib/lib-min.js':[libs]
                 }
             }
         },
@@ -34,7 +38,7 @@ module.exports = function(grunt) {
             },
             build: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: {
                     'static/css/style.css': 'static/src/css/main.scss'

@@ -1,0 +1,23 @@
+{
+  "name": "narcisosurf",
+  "description": "Page for Narciso Surf Classes",
+  "main": "index.html",
+  "authors": [
+    "Bruno Junqueira"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/brunobra/narcisosurf-2.0",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/src/js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
