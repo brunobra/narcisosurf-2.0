@@ -1,6 +1,8 @@
-var libs = [
+var libsJs = [
     'static/src/lib/jquery/dist/jquery.min.js'
 ]
+
+var libCss = []
 
 module.exports = function(grunt) {
 
@@ -11,7 +13,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'static/js/script-min.js': ['static/src/js/*.js'],
-                    'static/lib/lib-min.js':[libs]
+                    'static/lib/lib-min.js': libsJs
                 }
             },
             dev: {
@@ -23,8 +25,14 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'static/js/script-min.js': ['static/src/js/*.js'],
-                    'static/lib/lib-min.js':[libs]
+                    'static/lib/lib-min.js': libsJs
                 }
+            }
+        },
+        concat: {
+            dist: {
+                src: libCss,
+                dest: 'static/src/lib/lib.css'
             }
         },
         sass: {
@@ -33,7 +41,8 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'static/css/style.css': 'static/src/css/main.scss'
+                    'static/css/style.css': 'static/src/css/main.scss',
+                    'static/css/lib.css': 'static/src/lib/lib.css'
                 }
             },
             build: {
@@ -41,7 +50,8 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'static/css/style.css': 'static/src/css/main.scss'
+                    'static/css/style.css': 'static/src/css/main.scss',
+                    'static/css/lib.css': 'static/src/lib/lib.css'
                 }
             }
         },
@@ -61,9 +71,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Register task(s)
-    grunt.registerTask('default', ['uglify:dev', 'sass:dev']);
-    grunt.registerTask('build', ['uglify:build', 'sass:build']);
+    grunt.registerTask('default', ['uglify:dev', 'concat', 'sass:dev']);
+    grunt.registerTask('build', ['uglify:build', 'concat', 'sass:build']);
 
 };
